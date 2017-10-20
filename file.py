@@ -31,5 +31,21 @@ class temp:
   def rain():
     for k in forecasts['text']:
       if k == 'rain':
-         print(forecasts['date']) 
-      
+        print(forecasts['date']) 
+      else:
+        pass
+
+
+obj = temp()
+obj.find_weather()
+a = obj.max_temp()
+print('Maximum temp in 5 days is :' , a )
+
+b = obj.min_temp()
+print('Minimum temp in 5 days is : ', b)
+
+c=obj.rain()
+print(c)
+
+  
+
